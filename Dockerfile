@@ -1,15 +1,18 @@
 FROM python:3.10-slim
 
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
+
 WORKDIR /app
 
 # Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy source code
+# Copy application files
 COPY . .
 
-# Cloud Run uses PORT environment variable (default 8080)
 EXPOSE 8080
 
+# Execute server
 CMD ["python", "server.py"]

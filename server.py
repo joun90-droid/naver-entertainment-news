@@ -12,6 +12,7 @@ from updater import update_cache_files
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+HOST = "0.0.0.0"
 PORT = int(os.environ.get('PORT', 8080))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -145,7 +146,7 @@ def run_server():
     sync_thread = threading.Thread(target=background_realtime_sync, daemon=True)
     sync_thread.start()
 
-    server_address = ('0.0.0.0', PORT)
+    server_address = (HOST, PORT)
     httpd = HTTPServer(server_address, NaverEntertainWebHandler)
     local_ip = get_local_ip()
     
@@ -153,7 +154,7 @@ def run_server():
     print(f" 🎬 [Jun Young-jae] Naver Live Entertain News Web Server Started!")
     print(f" 🖥️ PC Browser Access: http://localhost:{PORT}")
     print(f" 📱 Mobile/Phone Access (Same Wi-Fi): http://{local_ip}:{PORT}")
-    print(f" ☁️ Listening on Port: {PORT}")
+    print(f" ☁️ Listening on Host: {HOST}, Port: {PORT}")
     print(" 🔄 Auto Real-time Live Sync: ACTIVE (15sec interval)")
     print("=" * 65)
 
