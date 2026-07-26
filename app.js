@@ -1,6 +1,6 @@
 /* =========================================================
    전영재 전용 네이버 연예뉴스 핫토픽 JavaScript App Engine
-   100% LIVE Real-Time Engine (Cache-Busting Enabled)
+   100% Fully Automated Real-time Live Engine (Zero-Click Sync)
    ========================================================= */
 
 const CATEGORIES = {
@@ -21,9 +21,19 @@ class NaverEntertainWebApp {
     this.selectedItem = null;
     this.bookmarks = this.loadBookmarks();
 
+    // Auto Refresh Timer states
+    this.autoRefreshIntervalSec = 15;
+    this.countdownRemainingSec = 15;
+    this.timerId = null;
+
     this.initElements();
     this.bindEvents();
-    this.loadCategory(this.currentCategory);
+
+    // Initial Load
+    this.loadCategory(this.currentCategory, false);
+
+    // Start 100% Zero-Click Auto Sync Engine
+    this.startAutoSyncEngine();
   }
 
   initElements() {
@@ -31,8 +41,15 @@ class NaverEntertainWebApp {
     this.searchInput = document.getElementById("searchInput");
     this.chipContainer = document.getElementById("chipContainer");
     this.inspectorContent = document.getElementById("inspectorContent");
-    this.liveStatusBadge = document.getElementById("liveStatusBadge");
     
+    // Live Indicators
+    this.liveStatusBadge = document.getElementById("liveStatusBadge");
+    this.countdownText = document.getElementById("countdownText");
+    this.syncProgressBar = document.getElementById("syncProgressBar");
+    this.refreshIntervalSelect = document.getElementById("refreshIntervalSelect");
+    this.toastNotify = document.getElementById("toastNotify");
+    this.toastMsg = document.getElementById("toastMsg");
+
     // Modal elements
     this.modalOverlay = document.getElementById("modalOverlay");
     this.bottomSheet = document.getElementById("bottomSheet");
@@ -55,8 +72,9 @@ class NaverEntertainWebApp {
       if (cat === "⭐ 즐겨찾기") {
         this.renderBookmarks();
       } else {
-        this.loadCategory(cat);
+        this.loadCategory(cat, false);
       }
+      this.resetCountdown();
     });
 
     // Mobile bottom nav click
@@ -78,8 +96,9 @@ class NaverEntertainWebApp {
         if (cat === "⭐ 즐겨찾기") {
           this.renderBookmarks();
         } else {
-          this.loadCategory(cat);
+          this.loadCategory(cat, false);
         }
+        this.resetCountdown();
       });
     });
 
@@ -90,14 +109,75 @@ class NaverEntertainWebApp {
     this.modalOverlay.addEventListener("click", () => this.closeModal());
     document.getElementById("btnCloseSheet")?.addEventListener("click", () => this.closeModal());
     
-    // Header refresh button - forces live fresh pull
+    // Header manual refresh button
     document.getElementById("btnRefresh")?.addEventListener("click", () => {
       if (this.currentCategory === "⭐ 즐겨찾기") {
         this.renderBookmarks();
       } else {
-        this.loadCategory(this.currentCategory, true);
+        this.loadCategory(this.currentCategory, false);
       }
+      this.resetCountdown();
     });
+
+    // Interval selector change
+    this.refreshIntervalSelect?.addEventListener("change", (e) => {
+      this.autoRefreshIntervalSec = parseInt(e.target.value, 10);
+      this.resetCountdown();
+    });
+  }
+
+  startAutoSyncEngine() {
+    if (this.timerId) clearInterval(this.timerId);
+
+    this.timerId = setInterval(() => {
+      if (this.autoRefreshIntervalSec <= 0) {
+        if (this.countdownText) this.countdownText.textContent = "(자동 갱신 꺼짐)";
+        if (this.syncProgressBar) this.syncProgressBar.style.width = "0%";
+        return;
+      }
+
+      this.countdownRemainingSec -= 1;
+
+      if (this.countdownRemainingSec <= 0) {
+        // Trigger silent automatic background sync
+        if (this.currentCategory !== "⭐ 즐겨찾기") {
+          this.loadCategory(this.currentCategory, true);
+        }
+        this.resetCountdown();
+      } else {
+        // Update countdown text & progress bar
+        if (this.countdownText) {
+          this.countdownText.textContent = `(${this.countdownRemainingSec}초 후 자동 갱신)`;
+        }
+        if (this.syncProgressBar) {
+          const pct = (this.countdownRemainingSec / this.autoRefreshIntervalSec) * 100;
+          this.syncProgressBar.style.width = `${pct}%`;
+        }
+      }
+    }, 1000);
+  }
+
+  resetCountdown() {
+    this.countdownRemainingSec = this.autoRefreshIntervalSec;
+    if (this.countdownText) {
+      if (this.autoRefreshIntervalSec > 0) {
+        this.countdownText.textContent = `(${this.countdownRemainingSec}초 후 자동 갱신)`;
+      } else {
+        this.countdownText.textContent = "(자동 갱신 꺼짐)";
+      }
+    }
+    if (this.syncProgressBar) {
+      this.syncProgressBar.style.width = this.autoRefreshIntervalSec > 0 ? "100%" : "0%";
+    }
+  }
+
+  showToast(message) {
+    if (!this.toastNotify || !this.toastMsg) return;
+    this.toastMsg.textContent = message;
+    this.toastNotify.classList.add("show");
+    setTimeout(() => {
+      this.toastNotify.classList.remove("show");
+    }, 3000);
   }
 
   updateNavState(cat) {
@@ -110,9 +190,10 @@ class NaverEntertainWebApp {
     const timeBuster = new Date().getTime();
     const urlWithBuster = targetUrl + (targetUrl.includes('?') ? '&' : '?') + `_t=${timeBuster}`;
 
+    // Determine proxy endpoints depending on origin
     const localProxyUrl = window.location.protocol === "file:" 
-      ? `http://localhost:8080/api/news?url=${encodeURIComponent(urlWithBuster)}&_t=${timeBuster}`
-      : `/api/news?url=${encodeURIComponent(urlWithBuster)}&_t=${timeBuster}`;
+      ? `http://localhost:8080/api/news?url=${encodeURIComponent(urlWithBuster)}`
+      : `/api/news?url=${encodeURIComponent(urlWithBuster)}`;
 
     // Attempt 1: Local server proxy with no-store
     try {
@@ -139,13 +220,16 @@ class NaverEntertainWebApp {
     return null;
   }
 
-  async loadCategory(catName, forceRefresh = false) {
-    this.newsFeed.innerHTML = `
-      <div class="state-center">
-        <div class="spinner"></div>
-        <p>🔴 <strong>[${catName}]</strong> 실시간 최신 연예뉴스를 불러오는 중...</p>
-      </div>
-    `;
+  async loadCategory(catName, isSilentAutoSync = false) {
+    // Only show loading spinner if it's NOT a silent background auto-sync
+    if (!isSilentAutoSync) {
+      this.newsFeed.innerHTML = `
+        <div class="state-center">
+          <div class="spinner"></div>
+          <p>🔴 <strong>[${catName}]</strong> 네이버 실시간 소식을 불러오는 중...</p>
+        </div>
+      `;
+    }
 
     const targetUrl = CATEGORIES[catName];
     let parsedItems = [];
@@ -189,33 +273,30 @@ class NaverEntertainWebApp {
       }
     }
 
-    // Update live timestamp badge
-    const nowStr = new Date().toLocaleTimeString("ko-KR");
-    if (this.liveStatusBadge) {
-      if (isLive) {
-        this.liveStatusBadge.style.background = "rgba(34, 197, 94, 0.2)";
-        this.liveStatusBadge.style.borderColor = "rgba(34, 197, 94, 0.4)";
-        this.liveStatusBadge.style.color = "#4ade80";
-        this.liveStatusBadge.innerHTML = `🔴 LIVE 실시간 (${nowStr})`;
-      } else {
-        this.liveStatusBadge.style.background = "rgba(234, 179, 8, 0.2)";
-        this.liveStatusBadge.style.borderColor = "rgba(234, 179, 8, 0.4)";
-        this.liveStatusBadge.style.color = "#facc15";
-        this.liveStatusBadge.innerHTML = `⚡ 백업 데이터 (${nowStr})`;
-      }
-    }
-
     if (parsedItems && parsedItems.length > 0) {
+      // Check if data actually changed during auto sync
+      const firstOldTitle = this.currentItems[0] ? this.currentItems[0].title : "";
+      const firstNewTitle = parsedItems[0] ? parsedItems[0].title : "";
+
       this.currentItems = parsedItems;
       this.filteredItems = parsedItems;
       this.renderFeed();
-      this.selectArticle(parsedItems[0], false);
-    } else {
+
+      // Keep selection or auto select first
+      if (!this.selectedItem || !parsedItems.some(it => it.id === this.selectedItem.id)) {
+        this.selectArticle(parsedItems[0], false);
+      }
+
+      if (isSilentAutoSync) {
+        const nowTimeStr = new Date().toLocaleTimeString("ko-KR", { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        this.showToast(`✨ 네이버 연예뉴스가 실시간 연동되었습니다 (${nowTimeStr})`);
+      }
+    } else if (!isSilentAutoSync) {
       this.newsFeed.innerHTML = `
         <div class="state-center" style="color: #f87171;">
-          <p style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">⚠️ [${catName}] 실시간 수신 오류</p>
-          <p style="font-size:0.85rem; color:#94a3b8; margin-bottom:14px;">네트워크를 확인하거나 아래 새로고침 버튼을 눌러주세요.</p>
-          <button class="btn-primary" style="width:auto; padding:8px 20px; display:inline-block;" onclick="app.loadCategory('${catName}', true)">🔄 실시간 다시 로딩</button>
+          <p style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">⚠️ [${catName}] 실시간 연동 중</p>
+          <p style="font-size:0.85rem; color:#94a3b8; margin-bottom:14px;">네트워크 연결 상태를 확인해주시기 바랍니다.</p>
+          <button class="btn-primary" style="width:auto; padding:8px 20px; display:inline-block;" onclick="app.loadCategory('${catName}', false)">🔄 다시 시도</button>
         </div>
       `;
     }

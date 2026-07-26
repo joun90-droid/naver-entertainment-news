@@ -6,13 +6,19 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#0f172a">
-  <title>전영재의 연예뉴스 핫토픽</title>
+  <title>전영재의 연예뉴스 핫토픽 (100% 실시간 연동)</title>
   
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="https://ssl.pstatic.net/static/entertain/2025/m/09/18/favicon_enter_192.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Live Update Toast Notification -->
+  <div class="toast-notification" id="toastNotify">
+    <span>✨</span>
+    <span id="toastMsg">네이버 최신 연예뉴스가 실시간 자동 연동되었습니다!</span>
+  </div>
 
   <!-- App Sticky Header -->
   <header class="app-header">
@@ -22,17 +28,35 @@
         <span>전영재의 연예뉴스 핫토픽</span>
       </div>
       <div class="header-actions">
-        <div class="user-badge" id="liveStatusBadge" style="background: rgba(34, 197, 94, 0.2); border-color: rgba(34, 197, 94, 0.4); color: #4ade80;">🔴 LIVE 실시간</div>
+        <div class="live-badge" id="liveStatusBadge">
+          <span class="live-dot"></span>
+          <span>100% 실시간 연동 중</span>
+        </div>
         <div class="user-badge">👑 VIP 전영재</div>
-        <button class="btn-icon" id="btnRefresh" title="새로고침">🔄</button>
+        <button class="btn-icon" id="btnRefresh" title="수동 수신">🔄</button>
       </div>
     </div>
   </header>
 
-  <!-- User Greeting Card -->
+  <!-- User Greeting & Real-time Auto Sync Banner -->
   <div class="user-greeting-card">
-    <div class="greeting-text">
-      👋 <strong>전영재님</strong>, 네이버 연예계 실시간 최신 핫이슈를 확인하세요!
+    <div class="greeting-top">
+      <div class="greeting-text">
+        👋 <strong>전영재님</strong>, 네이버 연예계 실시간 최신 핫이슈를 버튼 클릭 없이 자동으로 받아옵니다.
+      </div>
+      <div class="sync-status-box">
+        <span>⚡ 자동 실시간 갱신:</span>
+        <select class="auto-refresh-select" id="refreshIntervalSelect">
+          <option value="10">10초</option>
+          <option value="15" selected>15초</option>
+          <option value="30">30초</option>
+          <option value="0">끄기</option>
+        </select>
+        <span id="countdownText" style="font-weight: bold; color: #4ade80;">(15초 후 갱신)</span>
+      </div>
+    </div>
+    <div class="sync-progress-bg">
+      <div class="sync-progress-bar" id="syncProgressBar"></div>
     </div>
   </div>
 
@@ -54,7 +78,7 @@
   <div class="search-container">
     <div class="search-box">
       <span>🔍</span>
-      <input type="text" id="searchInput" placeholder="전영재님, 키워드나 연예인/언론사를 검색해보세요...">
+      <input type="text" id="searchInput" placeholder="전영재님, 키워드나 연예인/언론사를 실시간 검색해보세요...">
     </div>
   </div>
 

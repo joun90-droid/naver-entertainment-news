@@ -23,8 +23,8 @@ except Exception:
 class NaverEntertainApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("네이버 연예뉴스 핫토픽 | NAVER Entertain Hot Topic")
-        self.root.geometry("1240x820")
+        self.root.title("네이버 연예뉴스 핫토픽 (실시간 100% 연동) | NAVER Entertain Hot Topic")
+        self.root.geometry("1240x840")
         self.root.minsize(1050, 680)
         self.root.configure(bg="#0f172a")
 
@@ -37,37 +37,36 @@ class NaverEntertainApp:
         self.bookmarks = self.load_bookmarks()
         self.executor = ThreadPoolExecutor(max_workers=6)
 
-        self.auto_refresh_sec = 0
+        # Default 15s auto-refresh for zero-click live sync
+        self.auto_refresh_sec = 15
         self.refresh_timer_id = None
-        self.tk_images = {} # keep reference to avoid garbage collection
+        self.tk_images = {}
 
         self.setup_styles()
         self.build_ui()
         
-        # Load initial category data in background thread
+        # Load initial category data & start automatic 15s sync loop
         self.load_category(self.current_category)
+        self.schedule_auto_refresh()
 
     def setup_styles(self):
         style = ttk.Style()
         style.theme_use('clam')
         
-        # Color palette
-        self.BG_MAIN = "#0f172a"        # Deep slate background
-        self.BG_CARD = "#1e293b"        # Card surface
-        self.BG_CARD_HOVER = "#334155"  # Card hover surface
-        self.BG_PANEL = "#1e293b"       # Inspector panel
-        self.ACCENT_PURPLE = "#8b5cf6"  # Electric purple accent
-        self.ACCENT_PINK = "#ec4899"    # Neon pink accent
-        self.TEXT_PRIMARY = "#f8fafc"   # High contrast text
-        self.TEXT_MUTED = "#94a3b8"     # Muted text
-        self.BORDER_COLOR = "#334155"   # Divider lines
+        self.BG_MAIN = "#0f172a"
+        self.BG_CARD = "#1e293b"
+        self.BG_CARD_HOVER = "#334155"
+        self.BG_PANEL = "#1e293b"
+        self.ACCENT_PURPLE = "#8b5cf6"
+        self.ACCENT_PINK = "#ec4899"
+        self.TEXT_PRIMARY = "#f8fafc"
+        self.TEXT_MUTED = "#94a3b8"
+        self.BORDER_COLOR = "#334155"
 
         style.configure("TFrame", background=self.BG_MAIN)
         style.configure("Card.TFrame", background=self.BG_CARD, relief="flat")
         style.configure("Header.TFrame", background="#0b0f19")
         style.configure("Status.TFrame", background="#0b0f19")
-
-        # Scrollbar styling
         style.configure("Vertical.TScrollbar", background="#334155", troughcolor=self.BG_MAIN, borderwidth=0, arrowsize=12)
 
     def build_ui(self):
@@ -80,7 +79,7 @@ class NaverEntertainApp:
 
         title_lbl = tk.Label(
             title_box, 
-            text="🎬 네이버 연예뉴스 핫토픽", 
+            text="🎬 네이버 연예뉴스 핫토픽 (100% 실시간 자동 연동)", 
             font=("Malgun Gothic", 16, "bold"), 
             fg="#f472b6", 
             bg="#0b0f19"
@@ -89,7 +88,7 @@ class NaverEntertainApp:
 
         subtitle_lbl = tk.Label(
             title_box, 
-            text="실시간 연예 랭킹 & 화제 이슈 대시보드", 
+            text="새로고침을 누를 필요 없이 실시간으로 네이버 최신 연예뉴스가 갱신됩니다.", 
             font=("Malgun Gothic", 9), 
             fg="#94a3b8", 
             bg="#0b0f19"
@@ -103,7 +102,7 @@ class NaverEntertainApp:
         # Refresh button
         btn_refresh = tk.Button(
             ctrl_box,
-            text="🔄 새로고침",
+            text="🔄 즉시 수신",
             font=("Malgun Gothic", 10, "bold"),
             fg="#ffffff",
             bg="#8b5cf6",
@@ -138,9 +137,9 @@ class NaverEntertainApp:
 
         # Auto refresh selector
         tk.Label(ctrl_box, text="자동 갱신:", font=("Malgun Gothic", 9), fg="#94a3b8", bg="#0b0f19").pack(side="left", padx=(10, 5))
-        self.auto_refresh_var = tk.StringVar(value="OFF")
-        refresh_options = ["OFF", "1분", "3분", "5분"]
-        opt_menu = ttk.OptionMenu(ctrl_box, self.auto_refresh_var, "OFF", *refresh_options, command=self.on_auto_refresh_change)
+        self.auto_refresh_var = tk.StringVar(value="15초")
+        refresh_options = ["10초", "15초", "30초", "OFF"]
+        opt_menu = ttk.OptionMenu(ctrl_box, self.auto_refresh_var, "15초", *refresh_options, command=self.on_auto_refresh_change)
         opt_menu.pack(side="left")
 
         # 2. Category Tab Navigation Bar
@@ -209,7 +208,7 @@ class NaverEntertainApp:
         main_split = tk.Frame(self.root, bg=self.BG_MAIN)
         main_split.pack(fill="both", expand=True, padx=20, pady=(0, 10))
 
-        # 3-A. Left News Feed List (Scrollable Canvas)
+        # 3-A. Left News Feed List
         left_container = tk.Frame(main_split, bg=self.BG_MAIN)
         left_container.pack(side="left", fill="both", expand=True, padx=(0, 10))
 
@@ -225,8 +224,6 @@ class NaverEntertainApp:
         self.canvas_window = self.canvas.create_window((0, 0), window=self.feed_frame, anchor="nw")
         self.canvas.bind("<Configure>", self.on_canvas_configure)
         self.canvas.configure(yscrollcommand=self.scrollbar.set)
-
-        # Mousewheel scroll binding
         self.canvas.bind_all("<MouseWheel>", self._on_mousewheel)
 
         self.canvas.pack(side="left", fill="both", expand=True)
@@ -245,9 +242,9 @@ class NaverEntertainApp:
 
         self.status_label = tk.Label(
             status_bar, 
-            text=" 준비 완료", 
+            text=" 🟢 100% 실시간 자동 연동 활성화 (15초 마다 자동 수신)", 
             font=("Malgun Gothic", 9), 
-            fg="#94a3b8", 
+            fg="#4ade80", 
             bg="#0b0f19"
         )
         self.status_label.pack(side="left", padx=15, pady=4)
@@ -262,21 +259,17 @@ class NaverEntertainApp:
         self.update_time_label.pack(side="right", padx=15, pady=4)
 
     def build_inspector_panel(self):
-        # Header banner in inspector
         ins_header = tk.Frame(self.right_panel, bg="#0f172a", pady=10, padx=15)
         ins_header.pack(fill="x", side="top")
 
         tk.Label(ins_header, text="📌 기사 상세보기", font=("Malgun Gothic", 12, "bold"), fg="#f472b6", bg="#0f172a").pack(anchor="w")
 
-        # Scrollable container for preview content
         self.ins_container = tk.Frame(self.right_panel, bg="#1e293b", padx=15, pady=15)
         self.ins_container.pack(fill="both", expand=True)
 
-        # Image preview
         self.preview_img_lbl = tk.Label(self.ins_container, bg="#0f172a", text="[ 썸네일 이미지 ]", fg="#64748b", font=("Malgun Gothic", 10))
         self.preview_img_lbl.pack(fill="x", pady=(0, 12))
 
-        # Badges frame (Category / Press)
         badge_frame = tk.Frame(self.ins_container, bg="#1e293b")
         badge_frame.pack(fill="x", anchor="w", pady=(0, 8))
 
@@ -286,7 +279,6 @@ class NaverEntertainApp:
         self.lbl_cat_badge = tk.Label(badge_frame, text="", font=("Malgun Gothic", 9), fg="#ec4899", bg="#831843", padx=8, pady=2)
         self.lbl_cat_badge.pack(side="left")
 
-        # News Title
         self.ins_title_lbl = tk.Label(
             self.ins_container,
             text="목록에서 기사를 선택하세요",
@@ -298,7 +290,6 @@ class NaverEntertainApp:
         )
         self.ins_title_lbl.pack(anchor="w", fill="x", pady=(0, 12))
 
-        # News Summary box
         summary_frame = tk.Frame(self.ins_container, bg="#0f172a", padx=12, pady=10)
         summary_frame.pack(fill="both", expand=True, pady=(0, 15))
 
@@ -313,7 +304,6 @@ class NaverEntertainApp:
         )
         self.ins_summary_text.pack(fill="both", expand=True)
 
-        # Action Buttons Box at bottom of inspector
         actions_box = tk.Frame(self.ins_container, bg="#1e293b")
         actions_box.pack(fill="x", side="bottom")
 
@@ -387,9 +377,6 @@ class NaverEntertainApp:
             self.load_category(category)
 
     def load_category(self, category_name):
-        self.status_label.configure(text=f" ⏳ [{category_name}] 기사를 불러오는 중입니다...", fg="#facc15")
-        self.root.update_idletasks()
-
         def background_fetch():
             items = self.crawler.fetch_category(category_name)
             self.root.after(0, lambda: self.render_feed(items, category_name))
@@ -400,58 +387,50 @@ class NaverEntertainApp:
         self.current_news_items = items
         self.filtered_news_items = items
         
-        # Clear existing cards in feed
         for child in self.feed_frame.winfo_children():
             child.destroy()
 
         if not items:
             empty_lbl = tk.Label(
                 self.feed_frame,
-                text="표시할 뉴스 기사가 없거나 네트워크 연결에 실패했습니다.",
+                text="표시할 뉴스 기사가 없거나 네트워크 수신 중입니다...",
                 font=("Malgun Gothic", 11),
                 fg="#94a3b8",
                 bg=self.BG_MAIN,
                 pady=40
             )
             empty_lbl.pack()
-            self.status_label.configure(text=f" ⚠️ [{category_name}] 기사를 불러오지 못했습니다.", fg="#f87171")
             return
 
-        self.status_label.configure(text=f" ✅ [{category_name}] 총 {len(items)}개의 핫토픽 기사를 로드했습니다.", fg="#4ade80")
-        now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        now_str = datetime.now().strftime("%H:%M:%S")
+        self.status_label.configure(text=f" 🟢 [{category_name}] 실시간 자동 수신 완료 (총 {len(items)}개 항목)", fg="#4ade80")
         self.update_time_label.configure(text=f"마지막 업데이트: {now_str}")
 
-        # Render news cards
         for idx, item in enumerate(items):
             card = self.create_news_card(self.feed_frame, item, idx + 1)
             card.pack(fill="x", pady=4, padx=2)
 
-        # Auto select first item
-        if items:
+        if items and (not self.selected_item or not any(it['id'] == self.selected_item['id'] for it in items)):
             self.inspect_article(items[0])
 
     def create_news_card(self, parent, item, rank_num):
         card = tk.Frame(parent, bg="#1e293b", bd=1, relief="solid", cursor="hand2")
 
-        # Rank badge
         badge_bg = "#ec4899" if rank_num <= 3 else "#334155"
-        badge_fg = "#ffffff"
         rank_lbl = tk.Label(
             card,
             text=str(rank_num),
             font=("Malgun Gothic", 11, "bold"),
-            fg=badge_fg,
+            fg="#ffffff",
             bg=badge_bg,
             width=3,
             pady=4
         )
         rank_lbl.pack(side="left", fill="y", padx=(0, 10))
 
-        # Thumbnail canvas/label
         thumb_lbl = tk.Label(card, text="🖼️", font=("Segoe UI Emoji", 14), bg="#0f172a", fg="#64748b", width=12, height=4)
         thumb_lbl.pack(side="left", padx=(0, 10), pady=6)
 
-        # Asynchronously fetch thumbnail
         if item.get("thumbnail"):
             def load_thumb(u=item["thumbnail"], lbl=thumb_lbl):
                 img = self.crawler.fetch_image(u, size=(110, 75))
@@ -464,7 +443,6 @@ class NaverEntertainApp:
                     self.root.after(0, update_ui)
             self.executor.submit(load_thumb)
 
-        # Details box (Office, Title, Summary)
         content_box = tk.Frame(card, bg="#1e293b")
         content_box.pack(side="left", fill="both", expand=True, pady=8, padx=(0, 10))
 
@@ -480,7 +458,6 @@ class NaverEntertainApp:
         )
         office_lbl.pack(side="left")
 
-        # Bookmark icon indicator if bookmarked
         if self.is_bookmarked(item):
             bm_lbl = tk.Label(top_meta, text="⭐ 즐겨찾기됨", font=("Malgun Gothic", 8, "bold"), fg="#facc15", bg="#1e293b")
             bm_lbl.pack(side="left", padx=8)
@@ -509,7 +486,6 @@ class NaverEntertainApp:
         )
         summary_lbl.pack(fill="x", anchor="w")
 
-        # Bind hover and click events across card elements
         elements = [card, rank_lbl, thumb_lbl, content_box, top_meta, office_lbl, title_lbl, summary_lbl]
         for elem in elements:
             elem.bind("<Button-1>", lambda e, it=item: self.inspect_article(it))
@@ -521,27 +497,21 @@ class NaverEntertainApp:
     def inspect_article(self, item):
         self.selected_item = item
 
-        # Update inspector title
         self.ins_title_lbl.configure(text=item['title'])
-
-        # Badges
         self.lbl_office_badge.configure(text=item['office'])
         self.lbl_cat_badge.configure(text=item.get('category', self.current_category))
 
-        # Summary
         self.ins_summary_text.delete("1.0", tk.END)
         summary_body = item['summary']
         if not summary_body or summary_body == item['title']:
             summary_body = "(요약 본문이 없습니다. 전체 내용은 원본 기사 읽기를 참조하세요.)"
         self.ins_summary_text.insert(tk.END, f"{summary_body}\n\n🔗 기사 URL:\n{item['url']}")
 
-        # Bookmark button text
         if self.is_bookmarked(item):
             self.btn_bookmark.configure(text="★ 즐겨찾기 해제", fg="#facc15", bg="#422006")
         else:
             self.btn_bookmark.configure(text="⭐ 즐겨찾기 추가", fg="#f8fafc", bg="#334155")
 
-        # Preview image
         if item.get("thumbnail"):
             def load_preview_img():
                 img = self.crawler.fetch_image(item["thumbnail"], size=(370, 240))
@@ -566,7 +536,6 @@ class NaverEntertainApp:
                 if query in it['title'].lower() or query in it['office'].lower() or query in it['summary'].lower()
             ]
 
-        # Re-render list with filtered items
         for child in self.feed_frame.winfo_children():
             child.destroy()
 
@@ -589,7 +558,7 @@ class NaverEntertainApp:
     def open_article_in_browser(self):
         if self.selected_item and self.selected_item.get('url'):
             webbrowser.open(self.selected_item['url'])
-            self.status_label.configure(text=f" 🌐 Web browseropened: {self.selected_item['title'][:30]}...", fg="#60a5fa")
+            self.status_label.configure(text=f" 🌐 웹 브라우저 연결: {self.selected_item['title'][:30]}...", fg="#60a5fa")
 
     def copy_link_to_clipboard(self):
         if self.selected_item and self.selected_item.get('url'):
@@ -597,7 +566,6 @@ class NaverEntertainApp:
             self.root.clipboard_append(self.selected_item['url'])
             self.status_label.configure(text=" 📋 기사 링크가 클립보드에 복사되었습니다!", fg="#facc15")
 
-    # Bookmark Management
     def load_bookmarks(self):
         filepath = "bookmarks.json"
         if os.path.exists(filepath):
@@ -635,7 +603,6 @@ class NaverEntertainApp:
         self.save_bookmarks()
         self.inspect_article(item)
 
-        # Refresh feed view if in bookmark tab
         if self.current_category == "⭐ 즐겨찾기":
             self.load_bookmarks_feed()
 
@@ -643,7 +610,6 @@ class NaverEntertainApp:
         items = list(self.bookmarks.values())
         self.render_feed(items, "⭐ 즐겨찾기")
 
-    # Export Features
     def export_news_data(self):
         if not self.current_news_items:
             messagebox.showinfo("안내", "내보낼 뉴스 기사가 없습니다.")
@@ -669,7 +635,7 @@ class NaverEntertainApp:
                     writer.writerow(["순위", "언론사", "제목", "요약", "URL"])
                     for item in self.current_news_items:
                         writer.writerow([item.get('rank', ''), item.get('office', ''), item.get('title', ''), item.get('summary', ''), item.get('url', '')])
-            else: # .txt
+            else:
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(f"=== 네이버 연예뉴스 [{self.current_category}] 핫토픽 목록 ===\n")
                     f.write(f"생성 일시: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
@@ -684,7 +650,6 @@ class NaverEntertainApp:
         except Exception as e:
             messagebox.showerror("오류", f"파일 저장 중 오류가 발생했습니다: {e}")
 
-    # Auto Refresh Timer
     def on_manual_refresh(self):
         if self.current_category == "⭐ 즐겨찾기":
             self.load_bookmarks_feed()
@@ -692,20 +657,19 @@ class NaverEntertainApp:
             self.load_category(self.current_category)
 
     def on_auto_refresh_change(self, val):
+        sec_map = {"10초": 10, "15초": 15, "30초": 30, "OFF": 0}
+        self.auto_refresh_sec = sec_map.get(val, 0)
+        self.schedule_auto_refresh()
+
+    def schedule_auto_refresh(self):
         if self.refresh_timer_id:
             self.root.after_cancel(self.refresh_timer_id)
             self.refresh_timer_id = None
 
-        sec_map = {"1분": 60, "3분": 180, "5분": 300}
-        self.auto_refresh_sec = sec_map.get(val, 0)
-        
-        if self.auto_refresh_sec > 0:
-            self.schedule_auto_refresh()
-
-    def schedule_auto_refresh(self):
         if self.auto_refresh_sec > 0:
             self.refresh_timer_id = self.root.after(self.auto_refresh_sec * 1000, self.auto_refresh_trigger)
 
     def auto_refresh_trigger(self):
-        self.on_manual_refresh()
+        if self.current_category != "⭐ 즐겨찾기":
+            self.load_category(self.current_category)
         self.schedule_auto_refresh()
