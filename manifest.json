@@ -1,0 +1,21 @@
+{
+  "name": "전영재의 연예뉴스 핫토픽",
+  "short_name": "전영재 연예뉴스",
+  "description": "전영재님을 위한 맞춤형 실시간 네이버 연예뉴스 핫토픽 대시보드",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    {
+      "src": "https://ssl.pstatic.net/static/entertain/2025/m/09/18/favicon_enter_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://ssl.pstatic.net/static/entertain/2025/m/09/18/favicon_enter_192.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
