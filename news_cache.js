@@ -106,6 +106,16 @@ window.INITIAL_NEWS_CACHE = {
       "rank": 1,
       "id": "_",
       "office": "스포츠조선",
+      "title": "마네킹? 사람?..'마동석♥' 예정화, 봐도 봐도 놀라운 비현실 몸매",
+      "summary": "모델 겸 배우 예정화가 여름 분위기가 물씬 풍기는 일상을 공개했다. 예정화는 26일 개인 계정에 별다른 멘트 없이 여러 장의 사진을 게재했다. 공개된 사진에는 푸른 바다를 배경으로 서핑보드를 든 채 다양한 포즈를 취하는 예정화의 모습이 담겼다. 블랙 래쉬가드와 쇼트팬츠를 매치한 그는 군살 없는 탄탄한 몸매와 늘씬한 각선미를 드러내 감탄을 자아냈다. 팬들은 건강미 넘치는 비주얼과 변함없는 자기관리 능력에 뜨거운 반응을 보였다. 한편 예정화는 배우 마동석과 공개 열애 끝에 2021년 혼인신고를 마치며 법적 부부가 됐고, 2024년 서울에서 결혼식을 올렸다. 한동안 활동을 쉬었던 예정화는 최근 SNS를 다시 활발하게 운영하며 팬들과 소통을 이어가고 있다. 마동석은 넷플릭스 영화 '타이고'와 영화 '범죄도시5'를 차기작으로 선택해 촬영에 한창이다.",
+      "url": "https://m.entertain.naver.com/now/article/076/0004429272",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/076/2026/07/26/4429272.jpg",
+      "category": "연예가 핫토픽"
+    },
+    {
+      "rank": 2,
+      "id": "_",
+      "office": "스포츠조선",
       "title": "이창훈, 16살 어린 송혜교와 열애설…25년 만에 밝힌 진실 \"우는 장면 연습하다 와전\"('당신이 아픈 사이')",
       "summary": "배우 이창훈이 '순풍산부인과' 시절 송혜교와의 열애설 전말을 25년 만에 공개했다. 26일 방송된 MBN '당신이 아픈 사이'에는 이창훈이 출연했다. 이날 이창훈은 자신의 극복 키워드인 '경계령'에 대해 \"여배우들이 나한테 못 오게 매니저들이 막았다\"고 말해 사연에 궁금증을 자아냈다. 그는 \"처음 작품 시작했을 때 '엄마의 바다'에서 고소영 씨와 호흡을 맞췄고, 이후 심은하 씨, 김희선 씨, 이영애 씨 등 당대 최고의 여배우들과 작품을 했다\"고 회상했다. 이어 \"특히 '순풍산부인과' 할 때 송혜교 씨와 소문이 많았다\"라면서 \"당시 둘이 우는 장면이 있었다. 당시 고등학생이었던 송혜교와 둘이서 차 안에서 연습하고 있었는데, 울길래 다독여준 걸 보고 사귄다고 와전돼서 스캔들이 났다\"라고 해명했다. 그러면서 \"그때부터 여배우들 사이에서도, 매니저들 사이에서도 '이창훈만 조심하면 된다'는 이야기가 돌았다\"며 \"드라마를 35편 정도 찍었는데 30편이 멜로였다. 스캔들이 30개 났다\"고 밝혔다",
       "url": "https://m.entertain.naver.com/now/article/076/0004429271",
@@ -113,7 +123,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": "_",
       "office": "스포츠조선",
       "title": "\"북한군 11명 집단 탈북\" 이은영, 탈북민서 30억 사업가 된 사연 ('이만갑')",
@@ -123,7 +133,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "_",
       "office": "스포츠서울",
       "title": "“복원성형 효과?” 강예원, 또 달라진 얼굴...초근접 셀카 굴욕 無",
@@ -133,7 +143,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "_",
       "office": "스포츠조선",
       "title": "'위고비 중단' 신동, '비만 유전자' 이겨냈다...5개월만에 37kg 뺀 속사정",
@@ -143,7 +153,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "_",
       "office": "텐아시아",
       "title": "'55세' 김혜수, 뽀글머리 파마도 완벽 소화…김지훈, 파격 헤어스타일 선보여",
@@ -153,7 +163,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "_",
       "office": "스포츠서울",
       "title": "한 몸에 여러 인격이 산다…프랑스 화제작 ‘알테르 에고’, 한국 초연 확정",
@@ -163,7 +173,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "_",
       "office": "MHN스포츠",
       "title": "카페 망했다던 이수경, '월세 380만원' 새 집 공개…\"이정도면 감당 가능\" [MHN:픽]",
@@ -173,7 +183,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "_",
       "office": "MHN스포츠",
       "title": "'나는 솔로' 결혼 커플 또 나왔다…7살 연상연하 18기 영수♥영숙 부부 돼→두 사람 직업은?",
@@ -183,7 +193,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "_",
       "office": "뉴스1",
       "title": "유승준, 두 아들 공개…아빠 못지 않은 '몸짱' 복근 '깜짝' [N샷]",
@@ -193,7 +203,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": "_",
       "office": "연합뉴스",
       "title": "코르티스, 스포티파이 누적 스트리밍 10억회 달성",
@@ -203,7 +213,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "_",
       "office": "스포츠동아",
       "title": "박병은, 광기 폭주했다…“잡히면 진짜 죽여버릴 거야”(아파트)",
@@ -213,7 +223,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "_",
       "office": "스포츠조선",
       "title": "손태영, 출산 직후 회식간 ♥권상우에 폭발…\"문자 한 통이면 됐는데\"",
@@ -223,7 +233,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "_",
       "office": "매일경제",
       "title": "신발 신고 침대에…손담비, 여행 사진 공개했다가 갑론을박",
@@ -233,7 +243,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "id": "_",
       "office": "스포츠조선",
       "title": "\"아빠 닮아 훈남이네\" 유승준, 훌쩍 자란 근육질 몸 두 아들 공개..'붕어빵 이목구비'",
@@ -243,7 +253,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "id": "_",
       "office": "MK스포츠 ",
       "title": "‘MZ 감성 제대로 입었다’ 코르티스, KMA 2026 레드카펫 달군 Y2K 패션",
@@ -253,7 +263,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "id": "_",
       "office": "텐아시아",
       "title": "'165cm 39kg 뼈말라' 노정의, 청순 원피스 입었다가 반전 레드룩…'반전미' 뽐낸 여배우의 위엄",
@@ -263,7 +273,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "id": "_",
       "office": "스타뉴스",
       "title": "'옥장판 논란' 입 닫은 김호영, 옥주현 호소에도 꿋꿋한 마이웨이 셀카 [스타이슈]",
@@ -273,7 +283,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "id": "_",
       "office": "일간스포츠",
       "title": "소지섭, ‘김부장’ 떠나보내며 “감사했소”... 윤경훈 → 최대훈과 앙증 포즈[IS하이컷]",
@@ -283,7 +293,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "id": "_",
       "office": "MHN스포츠",
       "title": "'23.1%' 영광의 후속작, 2년 만에 돌아왔다… 美친 카타르시스 예고하며 기대감 상승 중인 이 작품 ('재벌X형사2')",
@@ -293,7 +303,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 20,
+      "rank": 21,
       "id": "_",
       "office": "스포츠월드",
       "title": "“블랙만 입는다고 혼나서…” 홍진영, 파격 브라운 밀착 원피스 자태",
@@ -303,7 +313,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 21,
+      "rank": 22,
       "id": "_",
       "office": "텐아시아",
       "title": "'연하남과 결별' 성해은, 여름 여신 강림했다…청량 비주얼 눈길",
@@ -313,7 +323,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 22,
+      "rank": 23,
       "id": "_",
       "office": "스타뉴스",
       "title": "정가은, '132억 사기' 전 남편 잠적 폭로..\"잔고 0원, 양육비도 못 받아\"[스타이슈]",
@@ -323,7 +333,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 23,
+      "rank": 24,
       "id": "_",
       "office": "스포츠서울",
       "title": "나이를 잊은 동안 미모, 48세 맞아?…하지원, 튜브톱 차림으로 전한 메이저리그 직관 일상",
@@ -333,7 +343,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 24,
+      "rank": 25,
       "id": "_",
       "office": "스포츠월드",
       "title": "“앞은 상큼, 뒤는 파격”…빌리 츠키, ‘워터밤’ 뒤흔든 과감 백리스 [스타★샷]",
@@ -343,7 +353,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 25,
+      "rank": 26,
       "id": "_",
       "office": "스포츠월드",
       "title": "“푸짐한 경품 받아가세요”…베트맨, 7월 건전화 캠페인 마감 임박",
@@ -353,7 +363,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "id": "_",
       "office": "스포츠조선",
       "title": "랄랄, 둘째 임신설 지웠다...8kg 감량 후 확 달라진 비주얼 '아이돌 미모'",
@@ -363,7 +373,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 27,
+      "rank": 28,
       "id": "_",
       "office": "텐아시아",
       "title": "'41세' 홍진영, 브라운 초미니로 과감한 변신…볼륨감 어쩔거야",
@@ -373,7 +383,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 28,
+      "rank": 29,
       "id": "_",
       "office": "스포츠월드",
       "title": "피원하모니, ‘KMA 2026’ 2관왕…“피스 덕에 더욱 빛나”",
@@ -383,7 +393,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "연예가 핫토픽"
     },
     {
-      "rank": 29,
+      "rank": 30,
       "id": "_",
       "office": "JTBC",
       "title": "데뷔 1주년 앞둔 코르티스, 스포티파이 누적 스트리밍 10억 돌파",
@@ -391,21 +401,21 @@ window.INITIAL_NEWS_CACHE = {
       "url": "https://m.entertain.naver.com/now/article/437/0000503083",
       "thumbnail": "http://imgnews.naver.net/image/thumb154/437/2026/07/26/503083.jpg",
       "category": "연예가 핫토픽"
-    },
-    {
-      "rank": 30,
-      "id": "_",
-      "office": "일간스포츠",
-      "title": "박정수 “30대에 대출 없이 집 샀다… 지금은 건물 임대수익으로 생활”",
-      "summary": "배우 박정수가 대출 없이 첫 집을 마련했던 과거를 떠올리며 현재는 건물 임대수익으로 생활하고 있다고 밝혔다. 박정수는 최근 자신의 유튜브 채널을 통해 공개한 ‘200억 건물을 팔라고요?! 부동산 박사의 충격 솔루션’이라는 제목의 영상에서 대한민국 1호 부동산학 박사로 알려진 서동기와 만나 부동산 투자에 대한 이야기를 나눴다. 이날 박정수는 “살면서 대출을 받아본 적이 없다”며 “30대 초반에 집 한 채를 샀는데 당시에는 대출 없이도 집을 살 수 있었다”고 회상했다. 이어 “살고 있는 집이 하나 있고, 조그만 건물 하나 있다. 거기서 나오는 임대수익으로 생활하고 있는데 걔가 효자”라며 “지금은 대출이 많다”고 현재 자산 상황을 전했다. 실거주 중인 서울 서초구 자택에 대해서도 언급했다. 박정수는 “집을 마련할 때 시세 차익이나 가격 상승보다 살기 편한 환경을 가장 중요하게 생각했다”며 “주변이 조용하고 우면산이 가까워 살기는 정말 좋은데 집값은 죽어라 안 오르고 예전이랑 똑같다”고 웃",
-      "url": "https://m.entertain.naver.com/now/article/241/0003521863",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/241/2026/07/26/3521863.jpg",
-      "category": "연예가 핫토픽"
     }
   ],
   "방송·TV": [
     {
       "rank": 1,
+      "id": "_",
+      "office": "스포츠경향",
+      "title": "‘살림남’ 안성훈, 박서진과 국민 일꾼 변신",
+      "summary": "안성훈과 박서진이 남다른 예능감을 발휘했다. 토탈셋의 안성훈이 동료 가수들과 함께 농촌에 활기를 불어넣었다. 지난 25일 방송된 KBS 2TV ‘살림하는 남자들 시즌2’에 출연한 안성훈은 절친한 동료 박서진, 신승태, 재하와 함께 강화도로 휴가를 떠났다. 당초 즐거운 휴가를 기대했으나 폭우라는 변수를 만난 네 사람은 마을 회관을 찾아가 일손을 돕는 ‘농촌 봉사’에 나섰다. 안성훈은 2천 평 규모의 대형 포도밭에서 빗물과 병충해를 방지하기 위한 종이 커버 씌우기 작업에 투입됐다. 갑작스러운 소식에 잠시 당황했으나 이내 붉은 앞치마와 장화를 완벽하게 갖춰 입고 ‘국민 일꾼’으로 변신해 묵묵히 제 몫을 다했다. 안성훈의 활약은 현장에서 더욱 빛났다. 고향인 안성의 특산물이 포도라는 점에 착안해 포도 재배에 관한 해박한 지식을 방출하며 ‘포도 박사’의 면모를 뽐냈고 조성모의 유명 CF를 패러디하며 현장 분위기를 주도하는 등 남다른 예능감을 발휘했다. 방송의 재미를 더하는 상황극도 이어졌다.",
+      "url": "https://m.entertain.naver.com/now/article/144/0001128195",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/144/2026/07/26/1128195.jpg",
+      "category": "방송·TV"
+    },
+    {
+      "rank": 2,
       "id": "_",
       "office": "뉴스엔",
       "title": "진성, 아내 덕에 림프종 혈액암 극복 “당신 덕에 살았다”(데이앤나잇)",
@@ -415,7 +425,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": "_",
       "office": "텐아시아",
       "title": "'월드컵 중계 구설' 전현무, 관심 즐겼다…\"나를 이강인이라 확신해서 몰려든 것\" ('사당귀')",
@@ -425,7 +435,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "_",
       "office": "뉴스엔",
       "title": "이창훈, 슈퍼카 끈 강남 큰 손 “30년 전 지갑에 현금 1억 5천 들고 다녀”(당아사)",
@@ -435,7 +445,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "_",
       "office": "일간스포츠",
       "title": "‘개콘’, 新 코너 ‘바로 보이는 라이브’ 오늘(26일) 방송… 색다른 콩트 예고",
@@ -445,7 +455,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "_",
       "office": "뉴스1",
       "title": "'김부장' 첫 악역 도전 주상욱 \"배우 인생에서 잊지 못할 작품\"",
@@ -455,7 +465,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "_",
       "office": "스포츠경향",
       "title": "‘결혼의 완성’ 남궁민-이설, 사이드미러 시선 교차",
@@ -465,7 +475,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "_",
       "office": "뉴스엔",
       "title": "제니도 쉴 땐 화장 안해‥자전거 타고 아이스크림 먹는 소박한 휴일",
@@ -475,7 +485,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "_",
       "office": "뉴스엔",
       "title": "‘멜로 드라마만 30편’ 이창훈, 최초 고백 “스캔들 30번 중에 2번은 진짜”(당신이 아픈 사이)",
@@ -485,7 +495,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "_",
       "office": "뉴스엔",
       "title": "츠키도 건물주 되겠네‥비키니 팬츠 입고 워터밤 흠뻑 적셨다",
@@ -495,7 +505,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": "_",
       "office": "티브이데일리",
       "title": "최대훈, '김부장' 유종의 미…액션·부성애·브로맨스 모두 잡았다 [일문일답]",
@@ -505,7 +515,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "_",
       "office": "뉴스엔",
       "title": "김종국 “신인 유재석, 터보 팬미팅 MC 보고 돈봉투 받더니 90도 인사”(유퀴즈)",
@@ -515,7 +525,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "_",
       "office": "뉴스엔",
       "title": "아이브 장원영, 인형보다 인형같은 미모",
@@ -525,7 +535,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "_",
       "office": "뉴스엔",
       "title": "강동현, 페이스오브코리아라이징 하이원리조트워터월드상[포토엔HD]",
@@ -535,7 +545,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "id": "_",
       "office": "뉴스엔",
       "title": "강동현, 페이스오브코리아라이징 위너상[포토엔HD]",
@@ -545,7 +555,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "id": "_",
       "office": "뉴스엔",
       "title": "이창훈, 월드 스타와 스캔들 또 해명 “송혜교와 소문 많았다”(당신이 아픈 사이)",
@@ -555,7 +565,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "id": "_",
       "office": "뉴스엔",
       "title": "김재훈, 페이스오브코리아라이징 올스타상[포토엔HD]",
@@ -565,7 +575,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "id": "_",
       "office": "TV리포트",
       "title": "tvN 싹 다 갈아엎었다…'5주 연속 시청률 1위' 신화 다시 쓸까→더 커진 스케일로 돌아온 韓 예능 ('산지직송3')",
@@ -575,7 +585,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "id": "_",
       "office": "뉴스엔",
       "title": "김재훈, 페이스오브코리아라이징 위너상[포토엔HD]",
@@ -585,7 +595,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "id": "_",
       "office": "텐아시아",
       "title": "'런닝맨' 촬영 현장, 아수라장 됐다…\"김종국 꼬장 부리네\" 송지효 배신에 복수전 돌입",
@@ -595,7 +605,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 20,
+      "rank": 21,
       "id": "_",
       "office": "뉴스엔",
       "title": "정호건, 페이스오브코리아라이징 레스틸렌키스상[포토엔HD]",
@@ -605,7 +615,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 21,
+      "rank": 22,
       "id": "_",
       "office": "뉴스엔",
       "title": "이세희, 페이스오브코리아라이징 뉴스타클리닉상[포토엔HD]",
@@ -615,7 +625,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 22,
+      "rank": 23,
       "id": "_",
       "office": "뉴스엔",
       "title": "이세희, 페이스오브코리아라이징 위너상[포토엔HD]",
@@ -625,7 +635,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 23,
+      "rank": 24,
       "id": "_",
       "office": "뉴스엔",
       "title": "이예은, 페이스오브코리아라이징 테리비코스상[포토엔HD]",
@@ -635,7 +645,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 24,
+      "rank": 25,
       "id": "_",
       "office": "뉴스엔",
       "title": "이예은, 페이스오브코리아라이징 위너상[포토엔HD]",
@@ -645,7 +655,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 25,
+      "rank": 26,
       "id": "_",
       "office": "뉴스엔",
       "title": "안세은, 페이스오브코리아라이징 닥터스 피부과상[포토엔HD]",
@@ -655,7 +665,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "id": "_",
       "office": "뉴스엔",
       "title": "안세은, 페이스오브코리아라이징 위너상[포토엔HD]",
@@ -665,7 +675,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 27,
+      "rank": 28,
       "id": "_",
       "office": "뉴스엔",
       "title": "이은유, 페이스오브코리아라이징 엘레강스파리상[포토엔HD]",
@@ -675,7 +685,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 28,
+      "rank": 29,
       "id": "_",
       "office": "뉴스엔",
       "title": "박수빈, 페이스오브코리아라이징 인천문화예술협회상[포토엔HD]",
@@ -685,23 +695,13 @@ window.INITIAL_NEWS_CACHE = {
       "category": "방송·TV"
     },
     {
-      "rank": 29,
+      "rank": 30,
       "id": "_",
       "office": "뉴스엔",
       "title": "‘해피투게더’ 황지원-이민우, 압도적 끼 폭발",
       "summary": "국민 MC 유재석이 차세대 스타의 탄생을 예고했다. 7월 24일 방송된 KBS ‘해피투게더-혼자가 아니어서 좋아’ 3회에서는 본선 B조 ‘최트리오’의 무대에 이어 ‘주식회사 박재정’, ‘환상의 짝꿍’, ‘봉한이네’가 등판해 가족, 동료, 친구와 함께 쌓아온 특별한 이야기가 담긴 무대로 유재석, 장항준, 윤종신 그리고 스페셜 MC 강민경의 마음을 움직였다. 이번 방송은 아버지와 남매가 뭉친 성악 가족 ‘최트리오’의 무대로 포문을 열었다. 아들 최은총은 “뭐든 열심히 하시는 아버지에게 휴식이 되어주는 건 노래였다. 하루라도 빨리 아버지와 함께하는 무대를 만들고 싶었다”라고 전해 감동을 더했다. 이동원의 ‘향수’를 선곡한 ‘최트리오’는 성악 가족다운 압도적 성량과 깊이 있는 하모니로 무대를 가득 채웠고, 장항준은 “선한 사람들의 선한 에너지가 가득한 무대였다”라며 감독다운 따뜻한 평을 더했다. 다음 무대는 ‘주식회사 박재정’팀의 박재정, 주시크였다. 박재정은 “형은 히트곡이 있는데 인지도",
       "url": "https://m.entertain.naver.com/now/article/609/0001150264",
       "thumbnail": "http://imgnews.naver.net/image/thumb154/609/2026/07/26/1150264.jpg",
-      "category": "방송·TV"
-    },
-    {
-      "rank": 30,
-      "id": "_",
-      "office": "뉴스엔",
-      "title": "김소율, 페아스오브코리아라이징 꾸어퍼스트 쁘띠꾸아상[포토엔HD]",
-      "summary": "'2026 하이원리조트 아시아모델페스티벌-페이스 오브 코리아 라이징'이 7월 24일 오후 강원도 하이원리조트 컨벤션센터에서 진행됐다. 이날 김소율이 꾸아퍼스트 쁘띠꾸아상을 수상 꾸아퍼스트 쁘띠꾸아 엄경옥 대표가 시상하고 있다 이번 대회를 거쳐 최종 대표로 선발된 수상자들에게는 오는 11월 열리는 'FACE OF ASIA' 국제 무대 진출권이 부여된다. 본 행사인 '제21회 하이원리조트 아시아모델페스티벌'은 오는 11월 18일부터 22일까지 강원랜드 하이원리조트 컨벤션센터에서 개최될 예정이다. 사진제공=페이스오브코리아 조직위",
-      "url": "https://m.entertain.naver.com/now/article/609/0001150263",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/609/2026/07/26/1150263.jpg",
       "category": "방송·TV"
     }
   ],
@@ -1012,6 +1012,16 @@ window.INITIAL_NEWS_CACHE = {
       "rank": 1,
       "id": "_",
       "office": "뉴스엔",
+      "title": "양유진, 하윤경 뼈때리는 한마디 “너 미쳤어?”(아파트)",
+      "summary": "배우 양유진이 배우 하윤경에게 직언을 했다. 7월 25일 방송된 JTBC 토일드라마 ‘아파트’ 5회에서 양유진은 강하리(하윤경 분)의 오랜 친구 하영주 역으로 분해 날카로운 현실 감각과 따뜻한 우정 사이를 오가는 연기를 선보였다. 이날 방송에서 양유진은 친구를 향한 하영주의 현실적인 우정을 생동감 있게 담아냈다. 하영주는 친구가 가짜 아내 역할을 맡고 있다는 사실에 당혹감을 감추지 못했다. 변호사를 꿈꾸는 하리가 돈 때문에 위험한 선택을 하자 \"너 미쳤어?\"라며 속상한 마음을 내비쳤다. 양유진은 황당함과 걱정이 뒤섞인 하영주의 복잡한 감정을 거침없는 말투로 생생하게 그려냈다. 강하리를 향한 하영주의 걱정과 경고는 멈추지 않았다. 그녀는 가짜 가족까지 꾸려 큰돈을 쓰면서까지 아파트 회장이 되려는 상대 남자의 수상한 속셈을 꼬집으며 친구에게 현실적인 충고를 날렸다. 양유진은 콕 짚어내는 현실적인 충고로 하영주의 우정을 쿨하고 설득력 있게 표현했다. 차가운 말속에서도 친구를 향한 하영주의",
+      "url": "https://m.entertain.naver.com/now/article/609/0001150292",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/609/2026/07/26/1150292.jpg",
+      "category": "드라마"
+    },
+    {
+      "rank": 2,
+      "id": "_",
+      "office": "뉴스엔",
       "title": "‘공감세포’ 김명수, 자취 감춘 강민아 찾는다",
       "summary": "배우 김명수가 자취를 감춘 배우 강민아를 찾는다. 7월 26일 방송되는 라이프타임 토일드라마 ‘공감세포’(극본 정연, 김성래/연출 김칠봉) 최종회에는 차은환(김명수 분)과 유지안(강민아 분) 사이에 훼방을 놓는 불청객이 등장한다. 지난 방송에서 유지안은 차은환의 도움을 받아 갑질 누명을 벗었다. 유지안의 전 소속사 대표 김준식(정희태 분)이 그녀의 갑질 논란을 유포한 사실이 드러나는가 하면 폭로자인 전 스타일리스트 신미정(박채원 분)은 갑질 동영상이 사실은 대본 연습이었다고 고백했다. 그러나 성공에만 목매는 유지안의 엄마 최정미(손지나 분)가 차은환의 뒷조사를 시작하면서 두 사람이 모르는 사이 또 다른 위기가 닥쳤다. 여기에 유지안은 과거 차은환의 아버지가 자신을 구하려다 목숨을 잃은 기억을 떠올리고 믿을 수 없는 진실에 눈물을 쏟고 말았다. 유지안이 과거 사건의 비밀을 깨닫고 충격에 빠진 가운데, 오늘(26일) 최종회를 앞두고 공개된 스틸에는 두 사람을 둘러싼 위기가 예고돼 손에",
       "url": "https://m.entertain.naver.com/now/article/609/0001150288",
@@ -1019,7 +1029,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "id": "_",
       "office": "MBC연예",
       "title": "'김부장' 소지섭-최대훈-윤경호, 가족도 우정도 지켜냈다…최고 27.1%",
@@ -1029,7 +1039,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "_",
       "office": "뉴스엔",
       "title": "‘오싹한 연애’ 양세종, 짠내나는 마음단련 시작…박은빈 노하우 전수",
@@ -1039,7 +1049,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "_",
       "office": "스포츠동아",
       "title": "양세종, 귀신 적응 훈련 시작…박은빈표 ‘강심장 루틴’ 공개(오싹한연애)",
@@ -1049,7 +1059,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "_",
       "office": "MBC연예",
       "title": "'오싹한 연애' 박은빈-양세종, 신(神)기한 세계 열렸다…오싹한 저주 START",
@@ -1059,7 +1069,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "id": "_",
       "office": "일간스포츠",
       "title": "지성·박병은·문소리 한 자리 모였다…‘아파트’ 신경전 팽팽",
@@ -1069,7 +1079,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "_",
       "office": "MBC연예",
       "title": "'사랑이 온다' 하석진, 안희연에 \"좋아하는 것 같다구요\" 고백 엔딩",
@@ -1079,7 +1089,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "_",
       "office": "일간스포츠",
       "title": "이동욱·김혜준 ‘킬러들의 쇼핑몰2’, 글로벌 TV쇼 톱10 진입",
@@ -1089,7 +1099,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "_",
       "office": "스포츠동아",
       "title": "양세종 귀신 적응 훈련? 이창훈과 공포영화 보기 (오싹한 연애)",
@@ -1099,7 +1109,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": "_",
       "office": "스포츠동아",
       "title": "지성 난방열사 변신…박병은·문소리와도 신경전 (아파트)",
@@ -1109,7 +1119,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "_",
       "office": "스포츠동아",
       "title": "“관대한 웃음 감사” 최대훈, 학씨 아저씨→도복 아저씨 (김부장)",
@@ -1119,7 +1129,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "_",
       "office": "엑스포츠뉴스",
       "title": "소지섭만 있었나…23% '김부장' 완성한 공신들  ['김부장' 회식하자②]",
@@ -1129,7 +1139,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "_",
       "office": "엑스포츠뉴스",
       "title": "'안경 쓴 아저씨' 소지섭·윤경호·최대훈, 20% 흥행 이끈 삼각 시너지 ['김부장' 회식하자①]",
@@ -1139,7 +1149,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "id": "_",
       "office": "스타뉴스",
       "title": "'김부장' 손나은, 첫 액션 신고식 성공적 \"한걸음 더 성장\"",
@@ -1149,7 +1159,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "id": "_",
       "office": "뉴스엔",
       "title": "남궁민, 결국 유치장行…아내 납치범 살해 막았다(결혼의 완성)",
@@ -1159,7 +1169,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "id": "_",
       "office": "머니투데이",
       "title": "시청률 23%로 유종의 미…소지섭 \"'김부장' 끝까지 함께해줘 감사\"",
@@ -1169,7 +1179,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "id": "_",
       "office": "스포티비뉴스",
       "title": "'김부장' 손나은, 첫 액션 성공적…트렌드세터→특임국 요원 '폭넓은 스펙트럼'",
@@ -1179,7 +1189,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "id": "_",
       "office": "뉴스엔",
       "title": "박은빈, 양세종도 당황시킨 멱살잡이 ‘오싹한 연애’ 최고 시청률 5.5%",
@@ -1189,7 +1199,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "id": "_",
       "office": "전자신문",
       "title": "'김부장' 최대훈, 마지막까지 든든한 '우리 편'",
@@ -1199,7 +1209,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 20,
+      "rank": 21,
       "id": "_",
       "office": "뉴스엔",
       "title": "평범한 세탁소 사장 아니었다…‘김부장’ 박진우 “역대급 시청률 떨려”",
@@ -1209,7 +1219,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 21,
+      "rank": 22,
       "id": "_",
       "office": "뉴스엔",
       "title": "‘김부장’ 김성규, 끝까지 존재감 美쳤다 “강성 사랑해줘 감사”",
@@ -1219,7 +1229,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 22,
+      "rank": 23,
       "id": "_",
       "office": "OSEN",
       "title": "[단독] \"소지섭 돌아옵니다\"..23% 신드롬 '김부장', 시즌2로 기세 잇는다(종합)",
@@ -1229,7 +1239,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 23,
+      "rank": 24,
       "id": "_",
       "office": "뉴스엔",
       "title": "“잡으면 죽여버릴거야” 박병은, 광기 연기 美쳤다",
@@ -1239,7 +1249,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 24,
+      "rank": 25,
       "id": "_",
       "office": "스포츠동아",
       "title": "장광 설마 딸 납치 배후? 남궁민 의심 엔딩 충격 (결혼의 완성)",
@@ -1249,7 +1259,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 25,
+      "rank": 26,
       "id": "_",
       "office": "MHN스포츠",
       "title": "최대훈, '김부장'과 작별… \"백 번 해도 부족한 말, 감사합니다\"",
@@ -1259,7 +1269,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "id": "_",
       "office": "스타뉴스",
       "title": "소지섭 딸 서수민, 감동적 소감 \"첫 드라마 '김부장'으로 많은 사랑, 얼떨떨\"",
@@ -1269,7 +1279,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 27,
+      "rank": 28,
       "id": "_",
       "office": "MK스포츠 ",
       "title": "‘소지섭 딸’ 서수민 “‘김부장’ 잊지 못할 시간” (종영소감)",
@@ -1279,7 +1289,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 28,
+      "rank": 29,
       "id": "_",
       "office": "스포티비뉴스",
       "title": "'김부장' 누적 시청자 2563만명…대한민국 절반 이상이 봤다(종합)",
@@ -1289,7 +1299,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "드라마"
     },
     {
-      "rank": 29,
+      "rank": 30,
       "id": "_",
       "office": "일간스포츠",
       "title": "‘소지섭 딸’ 서수민, ‘김부장’으로 드라마 데뷔 성공... “정말 기뻐”",
@@ -1297,21 +1307,51 @@ window.INITIAL_NEWS_CACHE = {
       "url": "https://m.entertain.naver.com/now/article/241/0003521843",
       "thumbnail": "http://imgnews.naver.net/image/thumb154/241/2026/07/26/3521843.jpg",
       "category": "드라마"
-    },
-    {
-      "rank": 30,
-      "id": "_",
-      "office": "스포티비뉴스",
-      "title": "종영 '김부장' 순간 최고 27.1%→마지막까지 2026년 미니시리즈 새 역사[TV핫샷]",
-      "summary": "'김부장'이 가족을 지키기 위해 모든 것을 내던진 세 아빠의 마지막 사투와 눈물의 재회, 웃음과 감동이 공존한 해피엔딩으로 2026년 최고 흥행 드라마를 완성했다. 25일 방송된 SBS 금토드라마 '김부장' 최종회는 닐슨코리아 기준 수도권 23.4%, 전국 23.0%, 순간 최고 27.1%를 기록했다. 특히 순간 최고 시청률 27.1%는 자체 최고 기록으로, 마지막까지 꺾이지 않은 '김부장'의 뜨거운 인기를 입증했다. 이로써 '김부장'은 10회 연속 동시간대 전 채널 1위를 차지한 것은 물론, 2026년 방송된 미니시리즈 최고 시청률 기록을 다시 한번 새로 쓰며 압도적인 흥행 신드롬을 보여줬다. 이날 마지막회에서 김부장(소지섭)은 성한수(최대훈)와 박진철(윤경호)의 자녀인 태훈과 다빈을 납치한 주강찬(주상욱)의 잔혹한 함정에 스스로 걸어 들어갔다. 주강찬은 세 친구를 링 위에 세운 뒤 \"친구를 죽일지, 자식을 죽일지 너희가 선택하라\"라고 협박하며 \"66만 죽으면 애들은 산다\"라고 성",
-      "url": "https://m.entertain.naver.com/now/article/477/0000620181",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/477/2026/07/26/620181.jpg",
-      "category": "드라마"
     }
   ],
   "뮤직": [
     {
       "rank": 1,
+      "id": "_",
+      "office": "티브이데일리",
+      "title": "남규리, 울산 미술관 찾은 근황…씨야 전국투어 앞두고 재충전",
+      "summary": "가수 겸 배우 남규리가 씨야의 데뷔 20주년 전국투어 콘서트를 앞두고 울산에서 재충전의 시간을 보냈다. 최근 남규리의 공식 유튜브 채널 '귤멍'에는 'Ep.56 전시보러 울산 다녀왔어요! 규리의 우아한 하루 브이로그 (feat. 하이퍼리얼리즘)'라는 제목의 영상이 공개됐다. 영상에서 남규리는 울산시립미술관을 찾아 '가장 완벽한 환영' 전시를 관람했다. 남규리는 \"울산에 제가 아는 작가님께서 대단한 전시를 하신다. 극사실주의 세계적인 작가님들 13분의 작품이 전시돼 있다\"라며 전시를 소개했다. 작품을 감상한 그는 \"이런 전시회를 보면은 생각을, 사고를 할 수 있게 되고 감정을 느끼고 이해를 하게 되고 좀 다른 시각으로 사물이나 세상을 바라보게 된다\"며 전시를 관람한 소감을 전했다. 이어 \"오셔서 새로운 영감과 크리에이티브한 생각을 많이 하시고 가시길 바란다\"며 문화생활을 추천했다. 전시 관람을 마친 남규리는 울산의 언양불고기를 맛본 뒤 바다를 찾았다. 자갈 해변에서 맨발로 셔플 댄스를",
+      "url": "https://m.entertain.naver.com/now/article/440/0000038560",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/440/2026/07/26/38560.jpg",
+      "category": "뮤직"
+    },
+    {
+      "rank": 2,
+      "id": "_",
+      "office": "스타뉴스",
+      "title": "유승준, 두 아들과 상탈 셀카 공개..아빠 똑 닮은 복근 [스타이슈]",
+      "summary": "가수 겸 배우 유승준이 두 아들과 함께한 휴가 근황을 전하며 비현실적인 근육질 피지컬을 과시했다. 26일 유승준은 개인 SNS에 \"808 vibes with beautiful people!! Thank God for another beautiful day\"라며 셀카 여러 장을 게재했다. 사진 속 유승준과 두 아들은 맑은 하늘과 푸른 바다를 배경으로 나란히 어깨동무를 한 채 당당하게 포즈를 취하고 있는 모습. 세 부자는 쨍한 블루 컬러의 팬츠와 선글라스까지 맞춰 입으며 완벽한 시밀러 룩을 완성했다. 무엇보다 세 사람의 압도적인 조각 몸매가 감탄을 자아낸다. 마치 CG로 복사해서 붙여넣기를 한 듯 세 명 모두 선명하게 갈라진 식스팩 복근과 다부진 구릿빛 근육을 뽐내고 있다. 유승준은 2004년 9월 결혼 후 슬하에 2남 2녀를 두고 있다. 2002년에는 병역기피 논란에 휩싸여 약 24년째 한국 땅을 밟지 못하고 있다. 이후 그는 여러 차례 입국 거부를 풀기 위해 사증 발급 거부를 취소해",
+      "url": "https://m.entertain.naver.com/now/article/108/0003456322",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/108/2026/07/26/3456322.jpg",
+      "category": "뮤직"
+    },
+    {
+      "rank": 3,
+      "id": "_",
+      "office": "MBC연예",
+      "title": "피프티피프티, 데뷔 첫 팬 콘서트 앞두고 깜짝 스포 \"못 보던 모습 볼 수 있어\"",
+      "summary": "피프티피프티(FIFTY FIFTY)가 후회 없을 공연을 예고했다. 25일 피프티피프티는 \"팬콘 스포도 할 겸, 팬콘을 함께 더 즐길 수 있도록 얘기를 해보기 위해 찾아왔다\"며 깜짝 라이브를 진행했다. 25일 방송된 MBC '쇼! 음악중심'에서 미니 4집 수록곡 'Genie Magic(지니 매직)'의 댄스 퍼포먼스를 최초로 공개한 멤버들은 \"오늘 음방에서 라이브 진짜 열심히 했어요\"라고 무대에 대한 이야기를 나눈 뒤 \"팬콘에서도 모든 곡들을 라이브로 열심히 할 거다. 현장감을 느낄 수 있으실 것\"이라고 라이브 무대에 대한 남다른 자신감을 보였다. 멤버들은 이어 \"팬분들이 팬 콘서트에서 보고 싶은 게 뭐가 있는지 궁금하다\"며 팬들의 반응을 살폈고, 특히 팬들이 팬 콘서트에서 보고 싶은 곡으로 많이 꼽은 수록곡 'Carry On(캐리 온)'에 대해서는 \"같이 떼창을 할 수 있는 곡이 되지 않을까. 녹음할 때도 트웨니(팬덤명)를 생각하면서 한 곡이라 팬분들 앞에서 부르면 울컥할 것 같다\"고",
+      "url": "https://m.entertain.naver.com/now/article/408/0000316039",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/408/2026/07/26/316039.jpg",
+      "category": "뮤직"
+    },
+    {
+      "rank": 4,
+      "id": "_",
+      "office": "헤럴드뮤즈",
+      "title": "코르티스, 스포티파이 누적 스트리밍 10억 돌파..최근 5년 내 데뷔 보이그룹 중 최다 재생수(공식)",
+      "summary": "코르티스(CORTIS)가 스포티파이 누적 재생수 10억 회를 돌파했다. 데뷔 1주년을 앞둔 그룹 코르티스(마틴, 제임스, 주훈, 성현, 건호)는 7월 24일 자 글로벌 오디오·음원 스트리밍 플랫폼 스포티파이에서 누적 스트리밍 10억 60만 회를 달성했다. 미니 1, 2집과 소니 픽쳐스 애니메이션 ‘GOAT’ 삽입곡 ‘Mention Me’ 등 공개된 모든 트랙의 합산 재생 수치다. 지난 7월 4일 자에 9억 스트리밍을 찍은 지 한 달도 안 돼 1억 재생을 추가했다. 이는 최근 5년 내 데뷔한 보이그룹 가운데 가장 높은 재생수 기록이다. 특히 단 두 장의 앨범과 13곡만으로 이 같은 성과를 거뒀다는 점에서 더욱 의미를 더한다. 한편 코르티스는 오는 31일~8월 1일(이하 현지 시각) 미국의 대형 음악축제 ‘롤라팔루자 시카고’(Lollapalooza Chicago)에 출격한다.",
+      "url": "https://m.entertain.naver.com/now/article/112/0003802516",
+      "thumbnail": "http://imgnews.naver.net/image/thumb154/112/2026/07/26/3802516.jpg",
+      "category": "뮤직"
+    },
+    {
+      "rank": 5,
       "id": "_",
       "office": "스포츠동아",
       "title": "무대 덜어내도 5만 관객… 라이즈, ‘존재 자체’가 흥행 보증수표",
@@ -1321,7 +1361,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 2,
+      "rank": 6,
       "id": "_",
       "office": "스포츠서울",
       "title": "‘쉬는 날엔 방해받기 싫어’…제니, 노출 의상 벗고 드러낸 ‘진짜 일상’",
@@ -1331,7 +1371,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "id": "_",
       "office": "일간스포츠",
       "title": "일기처럼 써 내려간 진심…‘컴백 D-1’ 데이식스 영케이, ‘셧 더 도어’ MV 티저 공개",
@@ -1341,7 +1381,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 4,
+      "rank": 8,
       "id": "_",
       "office": "뉴스엔",
       "title": "키스오브라이프, 3년 연속 ‘워터밤’ 달궜다",
@@ -1351,7 +1391,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 5,
+      "rank": 9,
       "id": "_",
       "office": "뉴스엔",
       "title": "전소미, 디플로 ‘워터밤’ 무대 깜짝 등장…신곡까지",
@@ -1361,7 +1401,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 6,
+      "rank": 10,
       "id": "_",
       "office": "뉴스엔",
       "title": "씨야, 전국투어 달릴 준비 완료…남규리 털털 매력",
@@ -1371,7 +1411,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 7,
+      "rank": 11,
       "id": "_",
       "office": "스포츠서울",
       "title": "아빠 닮아 몸짱인 두 아들 공개한 유승준, 군대 안 가도 되겠네!",
@@ -1381,7 +1421,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 8,
+      "rank": 12,
       "id": "_",
       "office": "MBC연예",
       "title": "클로즈 유어 아이즈, 'ACON 2026' 오프닝 장식",
@@ -1391,7 +1431,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 9,
+      "rank": 13,
       "id": "_",
       "office": "티브이데일리",
       "title": "친오빠 사망 → 발리 정착, 허가윤 \"한국 다녀오면 아프고 시작\" [★한컷]",
@@ -1401,7 +1441,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 10,
+      "rank": 14,
       "id": "_",
       "office": "뉴스엔",
       "title": "‘음악중심’ 루네이트, 거침없는 청량 퍼포먼스",
@@ -1411,7 +1451,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 11,
+      "rank": 15,
       "id": "_",
       "office": "뉴스엔",
       "title": "적수 없는 임영웅, 트로트 가수 브랜드평판 1위",
@@ -1421,7 +1461,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 12,
+      "rank": 16,
       "id": "_",
       "office": "마이데일리",
       "title": "킥플립, 'KMA 2026' 얼티메이트 12 수상 영예",
@@ -1431,7 +1471,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 13,
+      "rank": 17,
       "id": "_",
       "office": "스타뉴스",
       "title": "닫힌 문 너머로..데이식스 영케이, '셧 더 도어' MV 티저 최초 공개",
@@ -1441,7 +1481,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 14,
+      "rank": 18,
       "id": "_",
       "office": "뉴스엔",
       "title": "캣츠아이 ‘Animal’, 발매 첫날 美 스포티파이 4위 ‘커리어하이’",
@@ -1451,7 +1491,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 15,
+      "rank": 19,
       "id": "_",
       "office": "스포츠동아",
       "title": "방탄소년단·TXT 대상 품었다…‘KMA 2026’ 성황리 폐막",
@@ -1461,7 +1501,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 16,
+      "rank": 20,
       "id": "_",
       "office": "이데일리",
       "title": "코르티스, 스포티파이 10억 스트리밍…기록 썼다",
@@ -1471,7 +1511,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 17,
+      "rank": 21,
       "id": "_",
       "office": "뉴스엔",
       "title": "유니스, 스쿨룩으로 완성한 하이틴 감성",
@@ -1481,7 +1521,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 18,
+      "rank": 22,
       "id": "_",
       "office": "스포츠서울",
       "title": "37㎏ 빼고 ‘신동’까지 사라졌다…통통함 벗자 벌어진 ‘인지도 굴욕’",
@@ -1491,7 +1531,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 19,
+      "rank": 23,
       "id": "_",
       "office": "OSEN",
       "title": "코르티스, 스포티파이 10억 스트리밍 돌파..압도적 대세 행보",
@@ -1501,7 +1541,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 20,
+      "rank": 24,
       "id": "_",
       "office": "MBC연예",
       "title": "'KMA 2026' 방탄소년단·TXT·코르티스·화사 대상 영예",
@@ -1511,7 +1551,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 21,
+      "rank": 25,
       "id": "_",
       "office": "뉴스엔",
       "title": "제로베이스원 성한빈 ‘AAA 2026’ MC 확정",
@@ -1521,7 +1561,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 22,
+      "rank": 26,
       "id": "_",
       "office": "뉴스엔",
       "title": "‘컴백 D-1’ DAY6 영케이 ‘Shut The Door’ MV 최초 공개…깜짝 버스킹까지",
@@ -1531,7 +1571,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 23,
+      "rank": 27,
       "id": "_",
       "office": "스포츠동아",
       "title": "BTS 건드렸다가 ‘100만 역풍’…브라질 사회 들썩",
@@ -1541,7 +1581,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 24,
+      "rank": 28,
       "id": "_",
       "office": "뉴스엔",
       "title": "스트레이 키즈, 8월 7일 대망의 컴백…역대급 풍성한 콘텐츠",
@@ -1551,7 +1591,7 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 25,
+      "rank": 29,
       "id": "_",
       "office": "TV리포트",
       "title": "방탄소년단·TXT·코르티스·화사 대상 영예...'KMA 2026' 성료",
@@ -1561,53 +1601,13 @@ window.INITIAL_NEWS_CACHE = {
       "category": "뮤직"
     },
     {
-      "rank": 26,
+      "rank": 30,
       "id": "_",
       "office": "뉴스엔",
       "title": "박진영, 데뷔 32년차 안 믿기는 조각몸매…리빙 레전드 자기관리",
       "summary": "가수 겸 프로듀서 박진영(J.Y. Park)이 데뷔 32년 차에도 여전한 자기관리 능력을 증명했다. 박진영은 1994년 데뷔한 32년 차 아티스트로, 데뷔곡 '날 떠나지 마'부터 '난 여자가 있는데', '니가 사는 그집', 'Swing Baby', 'Honey', '엘리베이터', '어머님이 누구니 (Feat. 제시)' 등 한 번 들으면 흥얼거리게 되는 대중적 멜로디 위 파격 콘셉트와 퍼포먼스를 입힌 곡을 탄생시켜 최정상 자리에 우뚝 섰고 30년 이상 변화무쌍한 가요계 톱을 굳건히 지키고 있다. 특히 '파티', '1위곡', '그루브', '80년대', '30주년', '소극장' 등 다채로운 테마를 한 연말 단독 콘서트를 열고 크리스마스와 연말연시를 책임졌다. 박진영이 직접 만들고 흥행시킨 명곡 퍼레이드가 떼창을 이끌고 퍼포머로서 특장점이 살아있는 특유의 유려한 춤선이 관람 재미를 높이며 '연말 공연의 황제' 타이틀을 거머쥐었다. 2025년에도 11월 'Happy Hour (퇴근길) (Wi",
       "url": "https://m.entertain.naver.com/now/article/609/0001150229",
       "thumbnail": "http://imgnews.naver.net/image/thumb154/609/2026/07/26/1150229.jpg",
-      "category": "뮤직"
-    },
-    {
-      "rank": 27,
-      "id": "_",
-      "office": "스타뉴스",
-      "title": "코르티스, 앨범 두 장으로 스포티파이 10억 스트리밍 돌파",
-      "summary": "데뷔 1주년을 앞둔 코르티스(CORTIS, 마틴, 제임스, 주훈, 성현, 건호)가 지금까지 발표한 곡으로 스포티파이 누적 재생 수 10억 회를 돌파했다. 코르티스는 24일 자 글로벌 오디오·음원 스트리밍 플랫폼 스포티파이에서 누적 스트리밍 10억 60만 회를 달성했다. 미니 1, 2집과 소니 픽쳐스 애니메이션 'GOAT' 삽입곡 'Mention Me' 등 공개된 모든 트랙의 합산 재생 수치다. 지난 7월 4일 자에 9억 스트리밍을 찍은 지 한 달도 안 돼 1억 재생을 추가하면서 꾸준한 인기를 구가 중이다. 이는 최근 5년 내 데뷔한 보이그룹 가운데 최다 재생 수다. 단 두 장의 앨범, 13개 곡으로 이 같은 성과를 이뤘다는 점이 주목할 만하다. 또한 코르티스의 스포티파이 월간 청취자 수는 1270만 명을 돌파했다. 국가/지역별로는 미국에서 유입된 인원이 가장 많았고 인도네시아, 한국, 필리핀, 브라질, 일본이 뒤를 이었다. 미니 2집 타이틀곡 'REDRED'가 뜨거운 인기를 견인하고",
-      "url": "https://m.entertain.naver.com/now/article/108/0003456307",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/108/2026/07/26/3456307.jpg",
-      "category": "뮤직"
-    },
-    {
-      "rank": 28,
-      "id": "_",
-      "office": "코리아중앙데일리",
-      "title": "Stray Kids sets off STAYWeeK in celebration of fan club's eighth anniversary",
-      "summary": "Boy band Stray Kids began a weeklong festivity to celebrate the eighth anniversary of its fan club STAY, the band's agency JYP Entertainment said Sunday. The \"2026 STAYweeK\" began Sunday with a birthday cafe, common in K-pop culture where fans gather at a cafe dedicated to the birthdays of celebrities with special goods and foods, in eastern Seoul's Seongsu-dong. The cafe features memorabilia and exhibits to look back on the nine-year journey of the fandom and the band, according to the agency.",
-      "url": "https://m.entertain.naver.com/now/article/640/0000091736",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/640/2026/07/26/91736.jpg",
-      "category": "뮤직"
-    },
-    {
-      "rank": 29,
-      "id": "_",
-      "office": "헤럴드뮤즈",
-      "title": "코르티스, ‘KMA 2026’ 대상 포함 2관왕 “열심히 한 보람 느껴져”",
-      "summary": "코르티스(CORTIS)가 데뷔 11개월 만에 ‘KMA 2026’에서 대상 포함 2관왕을 차지했다. 그룹 코르티스(마틴, 제임스, 주훈, 성현, 건호)는 지난 25일 서울 고려대학교 화정체육관에서 열린 ‘KMA(KM차트어워즈) 2026’에서 가장 큰 상 중 하나인 ‘올해의 레코드’(RECORD OF THE YEAR)와 본상 ‘얼티메이트 12’(ULTIMATE 12)로 2관왕을 달성했다. 멤버들은 “데뷔한 지 아직 1년도 안 됐는데 항상 코어(COER.팬덤명)분들이 좋은 상을 주시는 것 같다. 미니 2집 활동 이후 처음 받는 상이라 너무 행복하고 열심히 한 보람이 느껴져 뿌듯하다”라고 밝혔다. 이어 미니 2집 타이틀곡 ‘REDRED’에 대해서는 “다 같이 곡을 만들 때부터 확신과 욕심이 있었고 이렇게 많은 사랑을 받게 된 것이 큰 행운인 것 같다. 계속 멋있는 모습을 보여드리겠다”라고 말했다. 한편 코르티스는 오는 31일~8월 1일(이하 현지 시각) 대형 음악 축제 ‘롤라팔루자 시카고’",
-      "url": "https://m.entertain.naver.com/now/article/112/0003802509",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/112/2026/07/26/3802509.jpg",
-      "category": "뮤직"
-    },
-    {
-      "rank": 30,
-      "id": "_",
-      "office": "MBC연예",
-      "title": "제로베이스원, 'KMA 2026'서 'ULTIMATE 12'?수상",
-      "summary": "그룹 제로베이스원(ZEROBASEONE)이 'KMA 2026'으로 또 하나의 트로피를 추가하며 저력을 입증했다. 25일 서울 고려대학교 화정체육관에서 열린 'KMA(KM차트어워즈) 2026'(이하 'KMA 2026')에 참석한 제로베이스원은 ULTIMATE 12(얼티메이트 12)를 수상하는 영예를 안았다. 제로베이스원은 \"멋진 상 주셔서 감사드린다. 지난 5월에 '어센드-(Ascend-)' 활동을 하면서 많은 감정도 느끼고, 좋은 결과를 낸 것 같다. 더 열심히 할 원동력을 얻었고, 그 기반이 되어준 제로즈(ZEROSE, 공식 팬덤명)에게 너무 감사하다는 말 전하고 싶다\"고 소감을 전했다. 이로써 제로베이스원은 또 하나의 트로피를 추가하며 '5세대 톱티어'의 위상을 다시 한번 빛냈다. 이들은 '제35회 서울가요대상'에서 4관왕에 오른 데 이어 'KMA 2026'에서도 음악적 역량과 남다른 활약을 인정받으며 꾸준한 상승세를 증명해 보였다. 제로베이스원은 앞서 미니 6집 '어센드-'를",
-      "url": "https://m.entertain.naver.com/now/article/408/0000316026",
-      "thumbnail": "http://imgnews.naver.net/image/thumb154/408/2026/07/26/316026.jpg",
       "category": "뮤직"
     }
   ],
