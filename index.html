@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3079797618341925" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#0f172a">
-  <title>전영재의 연예뉴스 핫토픽 (100% 실시간 연동)</title>
-  
+  <meta name="description" content="네이버 연예뉴스 실시간 랭킹·핫토픽을 한눈에. 방송·영화·드라마·뮤직·해외연예 최신 이슈를 자동 갱신합니다.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jeonyoungjae-newshot.web.app/">
+  <title>전영재의 연예뉴스 핫토픽 | 실시간 랭킹</title>
+
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="https://ssl.pstatic.net/static/entertain/2025/m/09/18/favicon_enter_192.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Live Update Toast Notification -->
   <div class="toast-notification" id="toastNotify">
     <span>✨</span>
     <span id="toastMsg">네이버 최신 연예뉴스가 실시간 자동 연동되었습니다!</span>
   </div>
 
-  <!-- App Sticky Header -->
   <header class="app-header">
     <div class="header-top">
       <div class="app-title">
@@ -30,23 +32,21 @@
       <div class="header-actions">
         <div class="live-badge" id="liveStatusBadge">
           <span class="live-dot"></span>
-          <span>100% 실시간 연동 중</span>
+          <span>실시간 연동</span>
         </div>
-        <div class="user-badge">👑 VIP 전영재</div>
-        <button class="btn-icon" id="btnRefresh" title="수동 수신">🔄</button>
+        <button class="btn-icon" id="btnRefresh" title="수동 새로고침" type="button">🔄</button>
       </div>
     </div>
   </header>
 
-  <!-- User Greeting & Real-time Auto Sync Banner -->
   <div class="user-greeting-card">
     <div class="greeting-top">
       <div class="greeting-text">
-        👋 <strong>전영재님</strong>, 네이버 연예계 실시간 최신 핫이슈를 버튼 클릭 없이 자동으로 받아옵니다.
+        네이버 연예계 실시간 핫이슈를 자동으로 받아옵니다.
       </div>
       <div class="sync-status-box">
-        <span>⚡ 자동 실시간 갱신:</span>
-        <select class="auto-refresh-select" id="refreshIntervalSelect">
+        <span>자동 갱신:</span>
+        <select class="auto-refresh-select" id="refreshIntervalSelect" aria-label="자동 갱신 간격">
           <option value="10">10초</option>
           <option value="15" selected>15초</option>
           <option value="30">30초</option>
@@ -60,36 +60,40 @@
     </div>
   </div>
 
-  <!-- Horizontal Swipeable Category Chips -->
+  <!-- AD_SLOT: top -->
+  <div class="ad-slot" aria-label="광고">
+    <span class="ad-slot-label">Advertisement</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3079797618341925"
+         data-ad-slot="0000000000"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
   <div class="category-wrapper">
     <div class="category-chips" id="chipContainer">
-      <button class="chip-btn active" data-category="실시간 랭킹">🔥 실시간 랭킹</button>
-      <button class="chip-btn" data-category="연예가 핫토픽">💥 연예가 핫토픽</button>
-      <button class="chip-btn" data-category="방송·TV">📺 방송·TV</button>
-      <button class="chip-btn" data-category="영화">🎬 영화</button>
-      <button class="chip-btn" data-category="드라마">🎭 드라마</button>
-      <button class="chip-btn" data-category="뮤직">🎶 뮤직</button>
-      <button class="chip-btn" data-category="해외연예">🌐 해외연예</button>
-      <button class="chip-btn" data-category="⭐ 즐겨찾기">⭐ 즐겨찾기</button>
+      <button class="chip-btn active" data-category="실시간 랭킹" type="button">🔥 실시간 랭킹</button>
+      <button class="chip-btn" data-category="연예가 핫토픽" type="button">💥 연예가 핫토픽</button>
+      <button class="chip-btn" data-category="방송·TV" type="button">📺 방송·TV</button>
+      <button class="chip-btn" data-category="영화" type="button">🎬 영화</button>
+      <button class="chip-btn" data-category="드라마" type="button">🎭 드라마</button>
+      <button class="chip-btn" data-category="뮤직" type="button">🎶 뮤직</button>
+      <button class="chip-btn" data-category="해외연예" type="button">🌐 해외연예</button>
+      <button class="chip-btn" data-category="⭐ 즐겨찾기" type="button">⭐ 즐겨찾기</button>
     </div>
   </div>
 
-  <!-- Real-time Search Bar -->
   <div class="search-container">
     <div class="search-box">
       <span>🔍</span>
-      <input type="text" id="searchInput" placeholder="전영재님, 키워드나 연예인/언론사를 실시간 검색해보세요...">
+      <input type="text" id="searchInput" placeholder="키워드·연예인·언론사 검색..." autocomplete="off">
     </div>
   </div>
 
-  <!-- Main Feed & Inspector Section -->
   <main class="main-container">
-    <!-- News Feed List -->
-    <section class="news-feed" id="newsFeed">
-      <!-- Dynamically rendered by JS -->
-    </section>
+    <section class="news-feed" id="newsFeed"></section>
 
-    <!-- Desktop Side Inspector -->
     <aside class="inspector-panel" id="desktopInspector">
       <div style="font-size:0.85rem; font-weight:700; color:#f472b6; margin-bottom:12px;">📌 기사 상세 정보</div>
       <div id="inspectorContent">
@@ -100,14 +104,29 @@
     </aside>
   </main>
 
-  <!-- Mobile Bottom Sheet Modal -->
+  <!-- AD_SLOT: bottom -->
+  <div class="ad-slot ad-slot-bottom" aria-label="광고">
+    <span class="ad-slot-label">Advertisement</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3079797618341925"
+         data-ad-slot="0000000001"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
+  <footer class="site-footer-app">
+    <p>기사 원문 저작권은 각 언론사·네이버에 있습니다. 본 사이트는 참고용 랭킹·요약 뷰어입니다.</p>
+    <p><a href="/privacy.html">개인정보처리방침</a></p>
+    <p class="footer-copy">© 2026 전영재의 연예뉴스 핫토픽</p>
+  </footer>
+
   <div class="modal-overlay" id="modalOverlay"></div>
   <div class="modal-bottom-sheet" id="bottomSheet">
     <div class="sheet-handle"></div>
     <div id="sheetBody"></div>
   </div>
 
-  <!-- Mobile App Bottom Navigation Bar -->
   <nav class="mobile-bottom-nav">
     <a href="#" class="nav-item active" data-category="실시간 랭킹">
       <span class="icon">🔥</span>
@@ -133,5 +152,12 @@
 
   <script src="news_cache.js"></script>
   <script src="app.js"></script>
+  <script>
+    try {
+      document.querySelectorAll('.adsbygoogle').forEach(function () {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      });
+    } catch (e) {}
+  </script>
 </body>
 </html>
