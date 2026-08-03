@@ -440,7 +440,7 @@ class NaverEntertainWebApp {
     if (navigator.share) {
       navigator.share({
         title: this.selectedItem.title,
-        text: `[전영재의 연예뉴스 핫토픽] ${this.selectedItem.title}`,
+        text: `[영재의 연예뉴스 핫토픽] ${this.selectedItem.title}`,
         url: this.selectedItem.url,
       }).catch(() => {});
     } else {

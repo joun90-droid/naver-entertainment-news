@@ -1,7 +1,7 @@
 {
-  "name": "전영재의 연예뉴스 핫토픽",
-  "short_name": "전영재 연예뉴스",
-  "description": "전영재님을 위한 맞춤형 실시간 네이버 연예뉴스 핫토픽 대시보드",
+  "name": "영재의 연예뉴스 핫토픽",
+  "short_name": "영재 연예뉴스",
+  "description": "영재의 실시간 네이버 연예뉴스 핫토픽 대시보드",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
